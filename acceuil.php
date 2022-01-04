@@ -61,7 +61,7 @@
                     <a href="getelecteur.php"> Mes informations <i class="fa fa-user"></i></a>
                 </li>
                 <li>
-                    <a href="electeur.php">Inscription sur les listes <i class="fa fa-user"></i></a>
+                    <a href="inscriptionliste.php">Inscription sur les listes <i class="fa fa-user"></i></a>
                 </li>
 
             </ul>

@@ -175,7 +175,7 @@
                         <th scope="col">Nom</th>
                         <th scope="col">Prenom</th>
 
-                        <th scope="col">Nom circonscription</th>
+                        <th scope="col"> circonscription</th>
                         <th scope="col">Region</th>
                         <th scope="col">Nombre de bureau</th>
                         <th scope="col">Departement</th>
