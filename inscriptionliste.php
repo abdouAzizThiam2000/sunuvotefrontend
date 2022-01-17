@@ -79,7 +79,7 @@
 
 
             <div id="content">
-                <div class="shadow p-3 mb-5 bg-body rounded" style="background-color: FBFBFB;">
+                <div class="shadow p-3 mb-5 bg-body rounded" style="background-color: white;">
                     <br>
 
 
@@ -106,58 +106,118 @@
                     </nav>
 
 
+                    <div id="accordion">
+                        <div class="card border-0">
+                            <div class="card-header" id="headingOne" style="background-color: white;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-info collapsed" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Informations personelles <i class="fa fa-info-circle"></i>
 
+                                    </button>
+                                </h5>
+                            </div>
 
-                    <form name="style.php" method="post">
+                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <label for="" style="color:#5C5B5B"> Numéro d'identification national</label>
+                                    <input type="text" name="nin" class="form-control" placeholder="Entrer le nin" git
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <br>
+                                    <label for="" style="color:#5C5B5B"> Prénom de l'electeur</label>
+                                    <input type="text" name="prenom" class="form-control" placeholder="Exemple: Malick"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <br> <label for="" style="color:#5C5B5B"> Nom de l'electeur</label>
+                                    <input type="text" name="nom" class="form-control" placeholder="Exemple: Gaye"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <br> <label for="" style="color:#5C5B5B"> Numero Telephone</label>
+                                    <input type="text" name="telephone" class="form-control"
+                                        placeholder="Entrer votre numero de telephone" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
 
-                        <label for="" style="color:#5C5B5B"> Numéro d'identification national</label>
-                        <input type="text" name="nin" class="form-control" placeholder="Entrer le nin"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <br>
-                        <label for="" style="color:#5C5B5B"> Prénom de l'electeur</label>
-                        <input type="text" name="prenom" class="form-control" placeholder="Exemple: Malick"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <br> <label for="" style="color:#5C5B5B"> Nom de l'electeur</label>
-                        <input type="text" name="nom" class="form-control" placeholder="Exemple: Gaye"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <br> <label for="" style="color:#5C5B5B"> Date de naissance</label>
-                        <input type="date" name="date" class="form-control" placeholder="Entrer le nin"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2"><br> <label for=""
-                            style="color:#5C5B5B"> Adresse</label>
-                        <input type="text" name="adresse" class="form-control" placeholder="Entrer votre adresse"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2"><br> <label for=""
-                            style="color:#5C5B5B"> Numero bureau de vote</label>
-                        <input type="number" name="nin" class="form-control" placeholder="Entrer le nin"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <br> <label for="" style="color:#5C5B5B"> Circonscription</label>
-                        <input type="text" name="circons" class="form-control"
-                            placeholder="Entrer votre circonscription" aria-label="Recipient's username"
-                            aria-describedby="basic-addon2">
-                        <br> <label for="" style="color:#5C5B5B"> Numero Telephone</label>
-                        <input type="text" name="telephone" class="form-control"
-                            placeholder="Entrer votre numero de telephone" aria-label="Recipient's username"
-                            aria-describedby="basic-addon2">
-
-
-                        <div class="float-center">
-                            <br>
-                            <button class="btn btn-outline-info" type="submit" name="valider" value="OK"> <i
-                                    class='fas fa-sign-in-alt'></i>
-
-
-                                S'inscrire
-
-
-                                <?php
-
-                                // $spinner = '  &nbsp;<div class="spinner-border spinner-border-sm text-info"></div>';
-                                ?>
-
-
-
-                            </button>
+                                </div>
+                            </div>
                         </div>
-                    </form>
+                        <div class="card border-0">
+                            <div class="card-header" id="headingTwo" style="background-color: white;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-info collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Lieu de naissance et adresse <i class="fa fa-info-circle"></i>
+
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <label for="" style="color:#5C5B5B"> Date de naissance</label>
+                                    <input type="date" name="date" class="form-control" placeholder="Entrer le nin"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2"><br> <label
+                                        for="" style="color:#5C5B5B"> Adresse</label>
+                                    <input type="text" name="adresse" class="form-control"
+                                        placeholder="Entrer votre adresse" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-header" id="headingThree" style="background-color: white;">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-info collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Circonscription <i class="fa fa-info-circle"></i>
+
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <label for="" style="color:#5C5B5B"> Nom Circonscription</label>
+                                    <input type="text" name="circons" class="form-control"
+                                        placeholder="Entrer le nom de votre circonscription"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <br>
+                                    <label for="" style="color:#5C5B5B"> Region</label>
+                                    <input type="text" name="region" class="form-control"
+                                        placeholder="Entrer le nom de votre region" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+                                    <br><label for="" style="color:#5C5B5B"> Departement</label>
+                                    <input type="text" name="departement" class="form-control"
+                                        placeholder="Entrer le nom de votre departement"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <br><label for="" style="color:#5C5B5B"> Arrondissement</label>
+                                    <input type="text" name="arrondissement" class="form-control"
+                                        placeholder="Entrer le nom de votre arrondissement"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card border-0" style="background-color: white;">
+
+                            <div class="card-body">
+                                <button class="btn btn-outline-info" type="submit" name="valider" value="OK"> <i
+                                        class='fas fa-sign-in-alt'></i>
+
+
+                                    S'inscrire
+
+
+
+
+
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
                     <p></p>
 
 

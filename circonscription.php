@@ -251,7 +251,7 @@ if ($_SESSION['connected'] != 1) {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Search results</h4>
+                    <h4 class="modal-title">Ajouter circonscription</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
 

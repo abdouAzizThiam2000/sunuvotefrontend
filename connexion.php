@@ -36,21 +36,17 @@ if ($_SESSION['connected'] == 1) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
 
 <body>
@@ -77,8 +73,7 @@ if ($_SESSION['connected'] == 1) {
             <ul class="list-unstyled CTAs">
                 <li><a href="connexion.php" class="download">SE CONNECTER &nbsp;<i class='fas fa-sign-in-alt'></i></a>
                 </li>
-                <li><a href="inscription.php" class="article">S'INSCRIRE &nbsp;<i
-                            class='fas fa-external-link-square-alt'></i>
+                <li><a href="inscription.php" class="article">S'INSCRIRE &nbsp;<i class='fas fa-external-link-square-alt'></i>
                     </a></li>
             </ul>
         </nav>
@@ -119,17 +114,14 @@ if ($_SESSION['connected'] == 1) {
                     <form name="style.php" method="post">
 
                         <label for="" style="color:#5C5B5B"> Numéro d'identification national</label>
-                        <input type="text" name="nin" class="form-control" placeholder="Entrer le nin"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" name="nin" class="form-control" placeholder="Entrer le nin" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <br>
                         <label for="" style="color:#5C5B5B"> Mot de passe</label>
-                        <input type="password" name="password" class="form-control" placeholder="mot de passe"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="password" name="password" class="form-control" placeholder="mot de passe" aria-label="Recipient's username" aria-describedby="basic-addon2">
 
                         <div class="float-center">
                             <br>
-                            <button class="btn btn-outline-info" type="submit" name="valider" value="OK"> <i
-                                    class='fas fa-sign-in-alt'></i>
+                            <button class="btn btn-outline-info" type="submit" name="valider" value="OK"> <i class='fas fa-sign-in-alt'></i>
 
 
                                 Se connecter
@@ -225,13 +217,13 @@ if ($_SESSION['connected'] == 1) {
 
 
 
-                            //  $messagebird = new MessageBird\Client('WqdwbdSkmlMZphpLcMrVDWs5Q');
-                            //  $message = new MessageBird\Objects\Message;
+                            $messagebird = new MessageBird\Client('WqdwbdSkmlMZphpLcMrVDWs5Q');
+                            $message = new MessageBird\Objects\Message;
 
-                            //  $message->originator = 'Sunu vote';
-                            //   $message->recipients = ['00221785902567'];
-                            //  $message->body = 'Hello World, I am a text message and I was hatched by PHP code!';
-                            //   $response = $messagebird->messages->create($message);
+                            $message->originator = 'Sunu vote';
+                            $message->recipients = ['00221785902567'];
+                            $message->body = 'VOTRE INSCRIPTION A SUNUVOTE EST VALIDÉ !';
+                            $response = $messagebird->messages->create($message);
                         } catch (SoapFault $ex) {
 
 
@@ -247,8 +239,7 @@ if ($_SESSION['connected'] == 1) {
 
 
                     <div class="line"></div>
-                    <span style="color:#5C5B5B"> SUÑU VOTE®, plateforme developée par </span><span
-                        style="color:#6d7fcc"> l'ADIE.
+                    <span style="color:#5C5B5B"> SUÑU VOTE®, plateforme developée par </span><span style="color:#6d7fcc"> Abdoulaye Djibril Kandji & Abdou Aziz Thiam
                     </span>
 
 
@@ -272,11 +263,11 @@ if ($_SESSION['connected'] == 1) {
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
+            $(document).ready(function() {
+                $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').toggleClass('active');
+                });
             });
-        });
         </script>
 </body>
 
